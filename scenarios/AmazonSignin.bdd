@@ -1,0 +1,14 @@
+SCENARIO: Amazon Signin
+META-DATA: {"description":"Amazon Signin Scenario","groups":["SMOKE"]}
+
+    Given get 'https://www.amazon.com/'
+	When mouseover on "signIn"
+    Then click on "signin"
+    And enter "emailID"
+    And click on "continue"
+    And verify text
+    And enter the "password"
+   Then the user should be able to login to his account
+    
+END
+	

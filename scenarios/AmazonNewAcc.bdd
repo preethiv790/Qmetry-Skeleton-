@@ -1,0 +1,11 @@
+SCENARIO: Create New Account
+META-DATA:{"dataFile":"resources/data/logintestdata.xls", "sheetName":"LoginSheet", "key":"login"}
+
+GIVEN user lands on "signIn page"
+WHEN user clicks on "create new account"
+AND Enters '$name'
+AND Enters '$email'
+AND Enters '$password'
+And Enters '$re-enter password'
+THEN Click on the create new account
+AND the user is able to craete new account.
